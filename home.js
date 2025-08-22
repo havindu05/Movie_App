@@ -21,6 +21,8 @@ let runNextAuto = setTimeOut(()=>{
     nextBtn.click()
 },timeAutoNext)
 
+
+
 function showSlider(type){
     let sliderItemsDom = list.querySelectorAll('.list .item');
     
