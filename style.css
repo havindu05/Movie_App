@@ -6,6 +6,9 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+body {
+    background-color: black;
+}
 
 header {
     width: 100%;
@@ -52,6 +55,7 @@ a:hover {
     border-radius: 6px 0 0 6px;
     outline: none;
     font-size: 14px;
+    background-color: white;
 }
 
 .search-bar button {
