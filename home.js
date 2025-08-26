@@ -46,3 +46,4 @@ function showSlider(type){
         nextbtn.click()
     },timeAutoNext)
 }
+
