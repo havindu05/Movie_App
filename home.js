@@ -53,14 +53,14 @@ function addToCart(name, price) {
     localStorage.setItem("cart", JSON.stringify(cart));
   }
   
-  // 🛒 Cart page එක load වෙන function එක
+  
   function loadCart() {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     let tbody = document.getElementById("cart-body");
     let total = 0;
   
-    if (tbody) { // buypage.html එකේ දවසේ පමණයි run වෙනවා
-      tbody.innerHTML = ""; // clear old rows
+    if (tbody) { 
+      tbody.innerHTML = ""; 
   
       cart.forEach(item => {
         let row = `<tr>
@@ -74,7 +74,7 @@ function addToCart(name, price) {
     }
   }
   
-  // 🗑️ Cart clear කරන්න
+  
   function clearCart() {
     localStorage.removeItem("cart");
     if (document.getElementById("cart-body")) {
