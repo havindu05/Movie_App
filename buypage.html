@@ -11,9 +11,9 @@
     <header>
         <nav>
             <a href="index.html">Home</a>
-            <a href="home.html">Movies</a>
+            <a href="movie.html">Movies</a>
             <a href="buypage.html" class="active">Buy</a>
-            <a href="">Contact us</a>
+            <a href="contact.html">Contact us</a>
         </nav>
         <form action="" method="get" class="search-bar">
             <input type="text" placeholder="Search..." name="q">
@@ -33,5 +33,25 @@
               </button>
         </form>
     </header>
+
+    <body onload="loadCart()" class="p-6">
+        <h1 class="text-2xl font-bold mb-4 text-white">Your Cart</h1>
+        <table class="table-auto border-collapse border border-gray-300 w-full">
+          <thead>
+            <tr>
+              <th class="border px-4 py-2 text-yellow-400">Movie</th>
+              <th class="border px-4 py-2 text-yellow-400">Price</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body"></tbody>
+        </table>
+        <h2 class="text-xl font-semibold mt-4">Total: <span id="total">$0</span></h2>
+      
+        <!-- Clear cart button -->
+        <button onclick="clearCart()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">
+          Empty Cart
+        </button>
+    
 </body>
+<script src="home.js"></script>
 </html>
