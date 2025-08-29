@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>BuyPage</title>
+</head>
+<body onload="loadCart()" class="p-6 bg-gray-900 text-white">
+
+    <header>
+        <nav class="mb-4">
+            <a href="index.html">Home</a>
+            <a href="movie.html">Movies</a>
+            <a href="buypage.html" class="active">Buy</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+        <form action="" method="get" class="search-bar mb-4">
+            <input type="text" placeholder="Search..." name="q">
+            <button type="submit" class="search-btn" id="search">
+              <a href="movieLoad.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50">
+                  <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 
+                           C 24.710938 37 28.140625 35.804688 30.9375 33.78125 
+                           L 44.09375 46.90625 L 46.90625 44.09375 
+                           L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 
+                           C 38 10.621094 30.378906 3 21 3 Z 
+                           M 21 5 C 29.296875 5 36 11.703125 36 20 
+                           C 36 28.296875 29.296875 35 21 35 
+                           C 12.703125 35 6 28.296875 6 20 
+                           C 6 11.703125 12.703125 5 21 5 Z">
+                  </path>
+                </svg>
+              </a>
+            </button>
+        </form>
+    </header>
+
+    <h1 class="text-2xl font-bold mb-4">Your Cart</h1>
+    <table class="table-auto border-collapse border border-gray-300 w-full">
+      <thead>
+        <tr>
+          <th class="border px-4 py-2 text-yellow-400">Movie</th>
+          <th class="border px-4 py-2 text-yellow-400">Price</th>
+        </tr>
+      </thead>
+      <tbody id="cart-body"></tbody>
+    </table>
+
+    <h2 class="text-xl font-semibold mt-4">Total: <span id="total">$0</span></h2>
+
+    <button onclick="clearCart()" class="mt-4 bg-red-500 text-white px-4 py-2 rounded-lg">
+      Empty Cart
+    </button>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

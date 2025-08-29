@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie App</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>SineCope</title>
 </head>
+
 <body>
-    <h1>Movie App</h1>
+
+    <header>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="movie.html" >Movies</a>
+            <a href="buypage.html">Buy</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+        <form action="" method="get" class="search-bar">
+            <input type="text" placeholder="Search..." name="q">
+            <button type="submit" class="search-btn" id="search">
+                <a href="movieLoad.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 50 50">
+                      <path d="M 21 3 C 11.621094 3 4 10.621094 4 20 C 4 29.378906 11.621094 37 21 37 
+                               C 24.710938 37 28.140625 35.804688 30.9375 33.78125 
+                               L 44.09375 46.90625 L 46.90625 44.09375 
+                               L 33.90625 31.0625 C 36.460938 28.085938 38 24.222656 38 20 
+                               C 38 10.621094 30.378906 3 21 3 Z 
+                               M 21 5 C 29.296875 5 36 11.703125 36 20 
+                               C 36 28.296875 29.296875 35 21 35 
+                               C 12.703125 35 6 28.296875 6 20 
+                               C 6 11.703125 12.703125 5 21 5 Z">
+                      </path>
+                    </svg>
+                  </a>
+              </button>
+        </form>
+    </header>
+
+    <div class="carousel">
+        <div class="list">
+            
+            <div class="item" style="background-image: url(assest/image/tom-and-jerry-5120x2880-23685.jpg);">
+                <div class="content">
+                    <div class="title">Tom & Jerry</div>
+                    <div class="name">Movie</div>
+                    <div class="des">Jerry crashes a big wedding at a swanky NYC hotel, leading the stressed planner to
+                        employ Tom to evict him. But a malicious staffer stirs even more trouble amid their antics.
+                    </div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(assest/image/final-destination-3840x2160-22397.png);">
+                <div class="content">
+                    <div class="title">Final Destinantion</div>
+                    <div class="name">Movie</div>
+                    <div class="des">A supernatural horror film where teenager Alex has a vision of his plane exploding.
+                        He and some classmates step off just in time, but soon death starts chasing them in creative,
+                        deadly ways.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(assest/image/hiccup-astrid-how-5120x4162-20030.jpg);">
+                <div class="content">
+                    <div class="title">Dragon</div>
+                    <div class="name">Movie</div>
+                    <div class="des">This fantasy-adventure retells the beloved tale of Hiccup, an inventive young
+                        Viking who befriends the dragon Toothless and begins to question longstanding prejudice on his
+                        home of Berk. Directed by Dean DeBlois with Gerard Butler returning as Stoick.</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(assest/image/i-know-what-you-did-5120x2880-22844.jpg);">
+                <div class="content">
+                    <div class="title">What you did</div>
+                    <div class="name">Movie</div>
+                    <div class="des">A reboot/sequel where five friends cover up a deadly car accident and, a year
+                        later, someone hauntingly knows their secret and seeks revenge</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(assest/image/jurassic-world-5120x2880-22719.jpg);">
+                <div class="content">
+                    <div class="title">Jurassic World</div>
+                    <div class="name">Movie</div>
+                    <div class="des">Set five years post-Dominion, dinosaurs survive only in equatorial zones. A mission
+                        to a remote island to extract DNA for a heart disease cure intertwines with rescuing a stranded
+                        family, as team members grapple with mutant beasts and corporate ethics</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(assest/image/lilo-stitch-poster-5120x3508-22248.jpg);">
+                <div class="content">
+                    <div class="title">Lilo-Stech</div>
+                    <div class="name">Movie</div>
+                    <div class="des">A sci-fi comedy about an orphaned Hawaiian girl, Lilo, who adopts an escaped alien
+                        (Stitch) masquerading as a dog. Though designed for chaos, Stitch helps reunite and heal her
+                        fragmented family. Directed by Dean Fleischer Camp</div>
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(assest/image/the-fantastic-four-3840x2160-23550.jpg);">
+                <div class="content">
+                    <div class="title">Fantastic four</div>
+                    <div class="name">Movie</div>
+                    <div class="des">This Marvel origin story, set in a vibrant 1960s-styled world, introduces Reed
+                        Richards, Sue Storm, Johnny Storm, and Ben Grimm. Together they face the cosmic threat of
+                        Galactus, culminating in a tense standoff while defending Earth and their child.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="arrows">
+            <button class="prev">
+                <img src="assest/image/icons8-back-arrow-50.png" alt="pic">
+            </button>
+                    <button class="next">
+                        <img src="assest/image/icons8-forward-button-50.png" alt="pic">
+                    </button>
+        </div>
+
+        <div class="timerunning"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
 </body>
 </html>

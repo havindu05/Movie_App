@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Load Page</title>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="movie.html">Movies</a>
+            <a href="buypage.html">Buy</a>
+            <a href="contact.html">Contact us</a>
+        </nav>
+    </header>
+
+    <div class="wrapper">
+        <div class="logo">
+            <div class="comntainer">
+                <p>Sine<span>Cope</span></p>
+            </div>
+        </div>
+         <div class="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" placeholder="search movie title" id="movie-search-box" onkeyup="findMovies()">
+            
+                <div class="search-list" id="search-list">
+                    <div class="search-list-item">
+                        <div class="search-image-thumbnail">
+                            <img src="" alt="">
+                        </div>
+                        <div class="search-item-info">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                    <div class="movie-poster">
+                        <img src="" alt="movie-poster">
+                    </div>
+                    <div class="movie-info">
+                        <h3 class="movie-title"></h3>
+                        <ul class="movie-misc-info">
+                            <li class="year">Year :</li>
+                            <li class="rated">Ratings :</li>
+                            <li class="released">Released : </li>
+                        </ul>
+                        <p class="genre"><b>Genre :</b></p>
+                        <p class="writer"><b>Writer :</b>/p>
+                        <p class="actors"><b>Actors :</b></p>
+                        <p class="polt"><b>Polt :</b></p>
+                        <p class="language"><b>Language :</b> </p>
+                        <p class="awards"><b>Awards :</b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+<script src="home.js"></script> 
+</html>
