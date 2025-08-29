@@ -82,3 +82,5 @@ function addToCart(name, price) {
       document.getElementById("total").innerText = "$0";
     }
   }
+
+  
